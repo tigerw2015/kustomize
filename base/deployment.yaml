@@ -19,6 +19,6 @@ spec:
           runAsNonRoot: true
       containers:
       - name: nginx
-        image: nginx
+        image: nginxinc/nginx-unprivileged
         ports:
         - containerPort: 8080
