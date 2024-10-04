@@ -16,7 +16,7 @@ spec:
         seccompProfile:
           type: RuntimeDefault
           # take care of running as root - item 3
-          runAsNonRoot: true
+          # runAsNonRoot: true
       containers:
       - name: nginx
         image: nginxinc/nginx-unprivileged
