@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: docker.io/nginx
+        image: nginxinc/nginx-unprivileged
         ports:
         - containerPort: 80
