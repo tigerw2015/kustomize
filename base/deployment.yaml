@@ -21,4 +21,4 @@ spec:
       - name: nginx
         image: nginxinc/nginx-unprivileged
         ports:
-        - containerPort: 8080
+        - containerPort: 80
