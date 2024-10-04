@@ -13,7 +13,7 @@ spec:
         app: web
     spec:
       containers:
-      - name: alpine
-        image: alpine
+      - name: nginx
+        image: rhel9/nginx-120
         ports:
         - containerPort: 80
