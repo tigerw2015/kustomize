@@ -12,6 +12,11 @@ spec:
       labels:
         app: web
     spec:
+      securityContext:
+        seccompProfile:
+          type: RuntimeDefault
+          # take care of running as root - item 3
+          runAsNonRoot: true
       containers:
       - name: nginx
         image: nginxinc/nginx-unprivileged
