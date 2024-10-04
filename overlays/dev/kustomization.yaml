@@ -16,4 +16,4 @@ configMapGenerator:
 - name: index-html-configmap
   behavior: replace
   files:
-  - index-dev.html
+  - files/ndex-dev.html
