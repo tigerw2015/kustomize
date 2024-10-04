@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: registry.redhat.io/rhceph/rhceph-haproxy-rhel9
+        image: registry.redhat.io/rhel9/nginx-124
         ports:
         - containerPort: 80
