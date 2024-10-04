@@ -7,13 +7,3 @@ resources:
 patches:
 - path: deployment-dev.yaml
 - path: service-dev.yaml
-
-generatorOptions:
-  labels:
-    fruit: apple
-
-configMapGenerator:
-- name: index-html-configmap
-  behavior: replace
-  files:
-  - files/index-dev.html
