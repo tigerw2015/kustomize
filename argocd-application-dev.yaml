@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: kustomize-practice-dev
+  namespace: openshift-gitops
+spec:
+  destination:
+    name: ''
+    namespace: dev
+    server: https://kubernetes.default.svc
+  source:
+    path: overlays/dev
+    repoURL: https://github.com/tigerw2015/kustomize.git
+    targetRevision: HEAD
+  sources: []
+  project: fmbo
